@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador LIAAN</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <main>
+            <section class="principal">
+                <div class="encriptador">
+                    <div class="circulo"><img src="img/Logo LIAAN.png" alt="logo pagina" id="logolian"></div>
+                    <textarea name="textArea" id="input_encriptador" cols="30" rows="10" autofocus placeholder="Ingrese el texto aquí"></textarea>
+                    <p> &#9888 Solo letras minusculas y sin acentos</p>
+                    <div class="botones_encriptador">
+                        <button id="btn_encriptar" onclick="capturarPalabra();">Encriptar</button>
+                        <button id="btn_desencriptar" onclick="desencriptarPalabra()">Desencriptar</button>
+                    </div>
+                </div>
+                <div class="desencriptador">
+                    <img id="muñeco" src="img/Muñeco.png" alt="">
+                    <p id="p1">Ningun mensaje fue encontrado</p>
+                    <p id="p2">Ingresa el texto que deseas encriptar o desencriptar</p>
+                    <button id="btn_copy" onclick="copyText()">copiar texto</button>
+                    <textarea name="resultado" id="resultado" cols="20" rows="10"></textarea>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
